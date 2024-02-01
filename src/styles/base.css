@@ -1,0 +1,31 @@
+body {
+  margin: auto auto;
+  height: auto;
+  max-height: 815px;
+  max-width: 815px;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 16pt;
+  background-color: #231722;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+  body {
+      max-height: unset;
+      max-width: unset;
+      max-height: 854;
+      bottom: 0;
+  }
+}
+
+main {
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  top: 0;
+  bottom: auto;
+}
